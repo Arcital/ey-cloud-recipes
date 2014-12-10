@@ -10,7 +10,8 @@
 # uncomment to turn on thinking sphinx 3. See cookbooks/thinking-sphinx-3/readme.md for documentation.
 # include_recipe "thinking-sphinx-3"
 include_recipe "ey-open-ports"
-include_recipe "rabbitmq"
+include_recipe "custom_nginx"
+#include_recipe "rabbitmq"
 # uncomment to use the collectd recipe. See cookbooks/collectd/readme.md for documentation.
 # include_recipe "collectd"
 
@@ -89,7 +90,7 @@ include_recipe "rabbitmq"
 #include_recipe "mysql_administrative_tools"
 
 #uncomment to include the Elasticsearch recipe
-#include_recipe "elasticsearch"
+include_recipe "elasticsearch"
 
 # To install specific plugins to Elasticsearch see below as an example
 #es_plugin "cloud-aws" do
